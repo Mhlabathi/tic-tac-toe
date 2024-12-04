@@ -1,3 +1,65 @@
 * {
     margin: 0px;
 }
+
+body {
+    text-align: center;
+}
+
+.container {
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.game-title {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    box-shadow: 0 0 10px inset red;
+}
+
+.players-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    margin: 20px;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 20px;
+}
+
+.cell-cover {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.cell {
+    border: 1px solid blue;
+    width: 130px;
+    height: 130px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #087E8B;
+    background-color: #FF5A5F;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.name-players, .reset-game, .rounds-to-play {
+    background-color: #087E8B;
+    color: #FF5A5F;
+    font-weight: bolder;
+    width: 130px;
+    height: 65px;
+    font-size: 15px;
+}
